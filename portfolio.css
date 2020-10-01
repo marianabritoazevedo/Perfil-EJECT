@@ -279,5 +279,11 @@ footer p{
 		color: white;
 		text-decoration: none;
 	}
+	.titulo-portfolio-img img{
+		position: relative;
+		width: 300px;
+		text-align: center;
+		margin-top: -80px;
+	}
 	
 }
