@@ -1,0 +1,283 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Faustina', serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+html, body{
+	height: 100%;
+	background-color: #DFF5FC;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+.clear{
+	clear: both;
+}
+.w30{
+	width: 30%;
+	float: left;
+}
+.w50{
+	width: 50%;
+	float: left;
+}
+.w70{
+	width: 70%;
+	float: left;
+}
+nav.mobile{
+	display: none;
+}
+nav.desktop{
+	height: 110px;
+	background-color: #215E8B;
+	width: 100%;
+}
+nav.desktop ul{
+	float: right;
+}
+nav.desktop li{
+	display: inline-block;
+    vertical-align: center;
+    padding: 10px 30px 20px 30px;
+    margin-top: 24px;
+    margin-right: 15px;
+    transition: 0.8s;
+}
+nav.desktop li.selected{
+	text-decoration: underline;
+}
+nav.desktop a{
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+nav.desktop li:hover{
+	background-color: rgba(23,66,97,0.8);
+	border-radius: 10px;
+	transition: 0.8s;
+}
+nav.desktop .logo img{
+	float: left;
+	width: 100px;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+section.inicio-portfolio{
+	position: relative;
+	background-image: url(images/bg-blue.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: auto;
+	max-width: 1440px;
+	margin: 0 auto;
+	z-index: 1;
+}
+section.inicio-portfolio > .container{
+	position: relative;
+	z-index: 2;
+}
+.overlay{
+	z-index: 1;
+	position: absolute;
+	background: rgba(255,255,255,0.2);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.titulo-portfolio h2{
+	text-align: center;
+	font-weight: normal;
+	font-size: 36px;
+	font-family: 'Amiri', serif;
+	padding-top: 40px;
+}
+.titulo-portfolio-img{
+	text-align: center;
+}
+.titulo-portfolio-img img{
+	position: relative;
+	width: 370px;
+	text-align: center;
+	margin-top: -80px;
+}
+.texto-portfolio{
+	max-width: 1000px;
+	margin: -30px auto 0px auto;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.texto-portfolio p{
+	font-size: 18px;
+}
+.buttons{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: rgba(53,143,197,0.8);
+	height: 250px;
+}
+.container-wrapper{
+	width: 33.3%;
+	padding: 20px 0px;
+	float: left;
+}
+.container-wrapper a{
+	text-decoration: none;
+	color: #323232;
+}
+.container-single{
+	height: 180px;
+	padding: 10px;
+	background-color: rgb(245, 245, 245);
+	border: 7px solid rgba(53,143,197,0.8);
+	transition: 0.5s;
+}
+.container-single img{
+	float: left;
+}
+.container-single h2{
+	float: left;
+	padding: 15px 0 10px 10px;
+}
+.container-single p{
+	margin: 10px 0;
+}
+.container-single:hover{
+	border: 3px solid #215E8B;
+	transition: 0.5s;
+}
+section.divisor div{
+	height: 10px;
+	background-color: #215E8B;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+section.mosaico-web, section.mosaico-ap, section.mosaico-artigos-projetos{
+	background-color: rgb(188,215,232);
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.titulo-web h2{
+	font-family: 'Amiri', serif;
+	font-size: 36px;
+	text-align: center;
+	font-weight: normal;
+	padding: 20px 0;
+}
+.flex-mosaico{
+	display: flex;
+}
+.item-1-mosaico{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	height: 350px;
+	border: 5px solid rgb(188,215,232);
+}
+.item-2-mosaico{
+	width: 40%;
+	background-color: rgba(33,81,112,0.8);
+	padding: 60px 40px;
+	border: 5px solid rgb(188,215,232);
+}
+.item-2-mosaico p{
+	color: white;
+	text-align: justify;
+	font-size: 18px;
+
+}
+.item-2-mosaico p.titulo-mosaico{
+	color: white;
+	font-size: 36px;
+	text-align: center;
+	line-height: 200px;
+	font-family: "Amiri", serif;
+}
+section.divisor-flex{
+	text-align: center;
+}
+.divisor-flex img{
+	height: 80px;
+	margin: 30px 0 20px 0;
+}
+footer{
+	height: auto;
+	background-color: #215E8B;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+footer p{
+	color: white;
+	font-weight: lighter;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Faustina', serif;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+@media screen and (max-width: 1050px){
+	.container-wrapper{
+		width: 100%;
+		text-align: center;
+	}
+	.buttons{
+		height: auto;
+		padding: 20px;
+	}
+	.flex-mosaico{
+		display: block;
+	}
+	.item-1-mosaico, .item-2-mosaico{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 800px){
+	nav.desktop{
+		display: none;
+	}
+	nav.mobile{
+		position: relative;
+		display: block;
+		width: 100%;
+		text-align: center;
+		height: 80px;
+		background-color: #215E8B;
+	}
+	nav.mobile ul{
+		display: none; /*colocar só depois de estilizar, e depois configurar com javascript*/
+		background: rgb(80,170,221);
+		position: absolute;
+		left: 0;
+		top: 80px;
+		width: 100%;
+		text-align: center;
+		z-index: 3;
+	}
+	nav.mobile li.selected{
+		background: rgba(33,94,139,1);
+	}
+	nav.mobile h3{
+		cursor: pointer;
+		position: absolute;
+		top: 16px;
+		right: 10px;
+		color: white;
+		float: left;
+	}
+	nav.mobile li{
+		padding: 8px 0;
+		border-top: 1px solid white;
+		cursor: pointer;
+	}
+	nav.mobile a{
+		color: white;
+		text-decoration: none;
+	}
+	
+}
